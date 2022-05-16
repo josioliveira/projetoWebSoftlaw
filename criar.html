@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" /> 
+    <title>Softlaw</title>
+    <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="criar.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h2>Criar Audiências</h2>
+        
+        <form action="cadastro.php" method="post">
+            <div class="row mb-3">
+                <label for="numero_processo">Número do Processo:</label>
+                <div class="col-sm-12">
+                    <input type="number" class="form-control" placeholder="Digite o número do processo" id="numero_processo" name="numero_processo">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="data_audiencia">Data:</label>
+                <div class="col-sm-12">
+                    <input type="date" class="form-control" placeholder="Data da Audiência" id="data_audiencia" name="data_audiencia">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="horario_audiencia">Hora:</label>
+                <div class="col-sm-12">
+                    <input type="time" class="form-control" placeholder="Hora da Audiência" id="horario_audiencia" name="horario_audiencia">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="advogado">Advogado(a):</label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nome do Advogado" id="advogado" name="advogado">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="forum_audiencia">Fórum:</label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nome do Fórum" id="forum_audiencia" name="forum_audiencia">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="endereco_forum">Endereço:</label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="Digite o endereço do Fórum" id="endereco_forum" name="endereco_forum">
+                </div>
+            </div>
+            <button type="button" class="btn btn-warning" onclick="salvar()">Salvar</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>
+
